@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="李明 - 专业摄影师个人网站，擅长人像、风光、婚礼及商业摄影。">
+    <title>李明 | 摄影师</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">LI MING</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">首页</a></li>
+                <li><a href="#gallery" class="nav-link">作品集</a></li>
+                <li><a href="#about" class="nav-link">关于我</a></li>
+                <li><a href="#services" class="nav-link">服务</a></li>
+                <li><a href="#contact" class="nav-link">联系</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页 / Hero -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">用镜头捕捉永恒</h1>
+            <p class="hero-subtitle">每一帧画面，都是时光的馈赠</p>
+            <a href="#gallery" class="btn btn-primary">浏览作品</a>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- 作品集 -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">作品集</h2>
+                <p class="section-subtitle">精选摄影作品</p>
+                <div class="section-line"></div>
+            </div>
+
+            <!-- 分类筛选 -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="portrait">人像</button>
+                <button class="filter-btn" data-filter="landscape">风光</button>
+                <button class="filter-btn" data-filter="wedding">婚礼</button>
+                <button class="filter-btn" data-filter="commercial">商业</button>
+            </div>
+
+            <!-- 作品网格 -->
+            <div class="gallery-grid">
+                <!-- 人像 -->
+                <div class="gallery-item" data-category="portrait">
+                    <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&h=800&fit=crop" alt="人像摄影" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <h3>光影人像</h3>
+                        <p>Portrait</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="portrait">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&h=800&fit=crop" alt="人像摄影" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <h3>自然之美</h3>
+                        <p>Portrait</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="portrait">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=800&fit=crop" alt="人像摄影" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <h3>城市肖像</h3>
+                        <p>Portrait</p>
+                    </div>
+                </div>
+
+                <!-- 风光 -->
+                <div class="gallery-item" data-category="landscape">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop" alt="风光摄影" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <h3>群山之巅</h3>
+                        <p>Landscape</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="landscape">
+                    <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=800&h=600&fit=crop" alt="风光摄影" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <h3>秋日私语</h3>
+                        <p>Landscape</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="landscape">
+                    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&h=600&fit=crop" alt="风光摄影" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <h3>湖畔晨雾</h3>
+                        <p>Landscape</p>
+                    </div>
+                </div>
+
+                <!-- 婚礼 -->
+                <div class="gallery-item" data-category="wedding">
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&h=800&fit=crop" alt="婚礼摄影" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <h3>永恒誓言</h3>
+                        <p>Wedding</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="wedding">
+                    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=600&h=800&fit=crop" alt="婚礼摄影" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <h3>幸福瞬间</h3>
+                        <p>Wedding</p>
+                    </div>
+                </div>
+
+                <!-- 商业 -->
+                <div class="gallery-item" data-category="commercial">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=700&h=700&fit=crop" alt="商业摄影" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <h3>产品光影</h3>
+                        <p>Commercial</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="commercial">
+                    <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=700&h=700&fit=crop" alt="商业摄影" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <h3>品牌视觉</h3>
+                        <p>Commercial</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 图片灯箱 -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img src="" alt="" class="lightbox-img">
+        <div class="lightbox-caption"></div>
+    </div>
+
+    <!-- 统计数据 -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="1200">0</span>
+                    <span class="stat-label">完成项目</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="500">0</span>
+                    <span class="stat-label">满意客户</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="15">0</span>
+                    <span class="stat-label">从业年限</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="30">0</span>
+                    <span class="stat-label">获得奖项</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?w=600&h=800&fit=crop" alt="摄影师李明" loading="lazy">
+                </div>
+                <div class="about-content">
+                    <div class="section-header section-header-left">
+                        <h2 class="section-title">关于我</h2>
+                        <p class="section-subtitle">镜头背后的故事</p>
+                        <div class="section-line"></div>
+                    </div>
+                    <p class="about-text">
+                        你好，我是<strong>李明</strong>，一名从业15年的专业摄影师。摄影对我而言不仅仅是一份职业，更是我与世界对话的方式。
+                    </p>
+                    <p class="about-text">
+                        从大学时代第一次拿起相机开始，我就深深沉迷于光影的魅力。15年来，我走遍了中国和世界30多个国家，用镜头记录下无数动人瞬间——从喜马拉雅的日出到巴黎街头的浪漫，从新生儿的第一声啼哭到银发夫妇的相视而笑。
+                    </p>
+                    <p class="about-text">
+                        我相信每一张照片背后都有一个故事。我的使命就是用专业的技术和独特的视角，帮你定格那些稍纵即逝的美好。
+                    </p>
+                    <div class="about-skills">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>人像摄影</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>风光摄影</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>后期处理</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>商业摄影</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服务 -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">服务项目</h2>
+                <p class="section-subtitle">为您提供专业摄影解决方案</p>
+                <div class="section-line"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+                        </svg>
+                    </div>
+                    <h3>人像写真</h3>
+                    <p>个人写真、情侣写真、家庭合影，用镜头记录最美的你。</p>
+                    <span class="service-price">¥2,000 起</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3>婚礼跟拍</h3>
+                    <p>全程记录婚礼的幸福时刻，让美好回忆永不褪色。</p>
+                    <span class="service-price">¥8,000 起</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <circle cx="8.5" cy="8.5" r="1.5"/>
+                            <path d="M21 15l-5-5L5 21"/>
+                        </svg>
+                    </div>
+                    <h3>商业摄影</h3>
+                    <p>产品摄影、企业形象、广告大片，助力品牌脱颖而出。</p>
+                    <span class="service-price">¥5,000 起</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+                        </svg>
+                    </div>
+                    <h3>旅拍摄影</h3>
+                    <p>跟随你的旅程，在最美的风景中定格难忘记忆。</p>
+                    <span class="service-price">¥6,000 起</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="14" rx="2"/>
+                            <path d="M8 21h8M12 17v4"/>
+                        </svg>
+                    </div>
+                    <h3>后期精修</h3>
+                    <p>专业调色、精修润饰，让每一张照片都完美呈现。</p>
+                    <span class="service-price">¥500 起</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3>视频拍摄</h3>
+                    <p>婚礼微电影、宣传短片、创意Vlog，让画面动起来。</p>
+                    <span class="service-price">¥3,000 起</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 客户评价 -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">客户评价</h2>
+                <p class="section-subtitle">他们的故事，我的荣幸</p>
+                <div class="section-line"></div>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"李明的镜头有一种魔力，他能捕捉到最自然、最动人的瞬间。我们的婚礼照片每一张都像电影画面一样美！"</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop" alt="客户" loading="lazy">
+                        <div>
+                            <h4>王小雨</h4>
+                            <span>婚礼客户</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"和李明合作非常愉快！他为我们的品牌拍摄的产品图，让销量提升了30%。专业、高效，强烈推荐！"</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop" alt="客户" loading="lazy">
+                        <div>
+                            <h4>陈伟</h4>
+                            <span>品牌创始人</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"去大理旅拍是我和女朋友做过最正确的决定，李明不仅拍出了最美的我们，还让整个旅程充满欢笑。"</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop" alt="客户" loading="lazy">
+                        <div>
+                            <h4>张然</h4>
+                            <span>旅拍客户</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系 -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="section-header section-header-left">
+                        <h2 class="section-title">联系我</h2>
+                        <p class="section-subtitle">期待与您相遇</p>
+                        <div class="section-line"></div>
+                    </div>
+                    <p class="contact-intro">无论您是想要记录人生重要时刻，还是为品牌寻找专业视觉方案，都欢迎随时联系我。</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M3 5h18M3 5v14h18V5M3 5l9 9 9-9"/>
+                            </svg>
+                            <span>hello@limingphoto.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                            </svg>
+                            <span>+86 138-0000-8888</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>上海市静安区南京西路1788号</span>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="#" class="social-link" aria-label="微信">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 01.213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 00.167-.054l1.903-1.114a.864.864 0 01.717-.098 10.16 10.16 0 002.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 01-1.162 1.178A1.17 1.17 0 014.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 01-1.162 1.178 1.17 1.17 0 01-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 01.598.082l1.584.926a.272.272 0 00.14.047c.134 0 .24-.111.24-.247 0-.06-.023-.12-.038-.177l-.327-1.233a.582.582 0 01-.023-.156.49.49 0 01.201-.398C23.024 18.48 24 16.82 24 14.98c0-3.21-2.931-5.952-7.062-6.122zm-2.18 2.769c.535 0 .969.44.969.982a.976.976 0 01-.969.983.976.976 0 01-.969-.983c0-.542.434-.982.97-.982zm4.844 0c.535 0 .969.44.969.982a.976.976 0 01-.969.983.976.976 0 01-.969-.983c0-.542.434-.982.97-.982z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="微博">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10.098 20.323c-3.977.391-7.414-1.406-7.672-4.02-.259-2.609 2.759-5.047 6.74-5.441 3.979-.394 7.413 1.404 7.671 4.018.259 2.6-2.759 5.049-6.739 5.443zm-1.566-4.333c-.33-.744-.187-1.62.273-2.25l-.116-.03c-.67.09-1.239.421-1.629.925-.521.677-.619 1.536-.247 2.208.318.575 1.133.81 1.894.558l.031-.1c-.29-.373-.394-.895-.206-1.311zm1.706-2.4c-1.83.251-3.217.895-3.714 1.75-.576.987-.157 2.122.736 2.761.253.182.541.303.85.364l.134-.426c-.298-.14-.558-.374-.72-.68-.36-.687-.147-1.473.36-1.98.37-.37.877-.56 1.388-.55l.112-.449c.288-.078.583-.113.854-.113v.323zm4.353.036c-2.164.177-3.903.655-4.319 1.455-.505.95.276 2.036 1.502 2.67 1.107.571 2.564.66 3.754.209.288-.11.553-.249.788-.42l.158-.502c-.236.089-.486.156-.742.199l-.065-.434c.166-.098.318-.215.447-.358.518-.568.527-1.349.08-1.896-.505-.614-1.53-.876-2.603-.923zm.255 1.847c.528.04 1.02.206 1.342.442.316.232.454.521.39.8-.07.303-.307.554-.643.726-.355.183-.804.264-1.27.247-.462-.017-.915-.161-1.243-.393-.33-.232-.477-.516-.408-.815.07-.298.313-.55.664-.733.378-.19.783-.3 1.168-.274z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="您的姓名" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="电子邮箱" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="联系电话">
+                        </div>
+                        <div class="form-group">
+                            <select id="service">
+                                <option value="">选择服务类型</option>
+                                <option value="portrait">人像写真</option>
+                                <option value="wedding">婚礼跟拍</option>
+                                <option value="commercial">商业摄影</option>
+                                <option value="travel">旅拍摄影</option>
+                                <option value="retouch">后期精修</option>
+                                <option value="video">视频拍摄</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="请描述您的需求..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">发送消息</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#home" class="footer-logo">LI MING</a>
+                <p class="footer-tagline">用镜头捕捉永恒</p>
+                <div class="footer-links">
+                    <a href="#home">首页</a>
+                    <a href="#gallery">作品集</a>
+                    <a href="#about">关于我</a>
+                    <a href="#services">服务</a>
+                    <a href="#contact">联系</a>
+                </div>
+                <p class="footer-copy">&copy; 2026 李明摄影工作室. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
